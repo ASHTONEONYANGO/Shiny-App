@@ -28,12 +28,10 @@ def create_ui():
             # Main panel with tabs
             ui.column(8,
                 ui.navset_tab(
-                    # Data Table tab
-                    ui.nav("Data Table",
+                    ui.nav_panel("Data Table",
                         ui.output_table("table")
                     ),
-                    # Plot tab
-                    ui.nav("Plot",
+                    ui.nav_panel("Plot",
                         ui.output_plot("plot")
                     )
                 )
